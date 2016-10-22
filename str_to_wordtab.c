@@ -76,18 +76,6 @@ void		fill_wordtab(char **wt, char *words, char *str, char *seps)
   wt[wt_i] = NULL;
 }
 
-void		my_show_wordtab(char **wt)
-{
-  unsigned	i;
-
-  i = 0;
-  while (wt[i])
-    {
-      printf("%s\n", wt[i]);
-      i++;
-    }
-}
-
 char		**my_str_to_wordtab(char *str, char *separators)
 {
   unsigned      count;
